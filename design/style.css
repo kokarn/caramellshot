@@ -1,0 +1,268 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, 
+body {
+	height: 100%;
+	overflow: hidden;
+}
+
+html {
+	background-color: #222;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
+	background-repeat: repeat;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+body {
+	background: #fff;
+	color: #333;
+	font-family: 'ABeeZee', sans-serif;
+	font-size: 20px;
+}
+
+button {
+	background-color: #fff;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#E6E6E6));
+	background-image: -webkit-linear-gradient(top, white, #E6E6E6);
+	background-image: -o-linear-gradient(top, white, #E6E6E6);
+	background-image: linear-gradient(to bottom, white, #E6E6E6);
+	background-image: -moz-linear-gradient(top, white, #E6E6E6);
+	background-repeat: repeat-x;
+	border: 1px solid #BBB;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	border-color: #E6E6E6 #E6E6E6 #BFBFBF;
+	border-bottom-color: #A2A2A2;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+	filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	color: #333;
+	cursor: pointer;
+	font-family: 'ABeeZee', sans-serif;
+	font-size: 16px;
+	margin: 10px 0 10px 0;
+	padding: 9px 14px;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	vertical-align: middle;
+	width: 100%;
+}
+
+ol {
+	margin: 0 0 0 25px;
+}
+
+.info-button {
+	background-color: #49AFCD;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5BC0DE), to(#2F96B4));
+	background-image: -webkit-linear-gradient(top, #5BC0DE, #2F96B4);
+	background-image: -o-linear-gradient(top, #5BC0DE, #2F96B4);
+	background-image: linear-gradient(to bottom, #5BC0DE, #2F96B4);
+	background-image: -moz-linear-gradient(top, #5BC0DE, #2F96B4);
+	background-repeat: repeat-x;
+	border-color: #2F96B4 #2F96B4 #1F6377;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff2f96b4', GradientType=0);
+	filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+	color: white;
+}
+
+h1 {
+	font-family: 'Finger Paint', cursive;
+	margin: 0 0 20px 0;
+	text-align: center;
+}
+
+#wrapper {
+	box-shadow: 0 0 10px #ccc;
+	padding: 20px;
+	width: 400px;
+}
+
+#dafuq-button {
+	font-size: 12px;
+	padding: 2px 2px 2px 2px;
+	position: absolute;
+	right: 9px;
+	top: 0;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	width: 50px;
+}
+
+#settings {
+	display: none;
+}
+
+#settings label {
+	clear: both;
+	display: block;
+	line-height: 41px;
+}
+
+#settings input {
+	float: right;
+	font-size: 20px;
+	padding: 5px;
+	max-width: 100px;
+}
+
+#caramelldansen-image-wrapper {
+	display: none;
+	text-align: center;
+}
+
+#youtubePlayer {
+	display: none;
+}
+
+#info-wrapper {
+	
+}
+
+@media all and (max-width: 600px) {
+	#wrapper {
+		box-shadow: 0;
+		width: 100%;
+	}
+
+	input[type="number"] {
+		width: 100px;
+	}
+}
+
+/*!
+ * avgrund 0.1
+ * http://lab.hakim.se/avgrund
+ * MIT licensed
+ *
+ * Created by Hakim El Hattab, http://hakim.se
+ */
+ 
+.avgrund-active body {
+	-webkit-transform: scale( 0.9 );
+	   -moz-transform: scale( 0.9 );
+	    -ms-transform: scale( 0.9 );
+	     -o-transform: scale( 0.9 );
+	        transform: scale( 0.9 );
+}
+
+.avgrund-cover {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	visibility: hidden;
+	opacity: 0;
+	background: rgba( 0, 0, 0, 0.5 );
+}
+	.avgrund-active .avgrund-cover {
+		visibility: visible;
+		opacity: 1;
+	}
+
+.avgrund-contents {
+	position: relative;
+	padding: 20px;
+	max-width: 400px;
+	/*height: 100%;*/
+	margin: auto;
+}
+	.avgrund-active .avgrund-contents {
+		-webkit-filter: blur(2px);
+		   -moz-filter: blur(2px);
+		    -ms-filter: blur(2px);
+		     -o-filter: blur(2px);
+		        filter: blur(2px);
+	}
+	.no-blur.avgrund-active .avgrund-contents {
+		-webkit-filter: none;
+		   -moz-filter: none;
+		    -ms-filter: none;
+		     -o-filter: none;
+		        filter: none;
+	}
+
+.avgrund-popup {
+	position: absolute;
+	width: 340px;
+	height: 180px;
+	left: 50%;
+	top: 50%;
+	margin: -130px 0 0 -190px;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 2;
+	padding: 20px;
+
+	background: white;
+	box-shadow: 0px 0px 20px rgba( 0, 0, 0, 0.6 );
+	border-radius: 3px;
+
+	-webkit-transform: scale( 0.8 );
+	   -moz-transform: scale( 0.8 );
+	    -ms-transform: scale( 0.8 );
+	     -o-transform: scale( 0.8 );
+	        transform: scale( 0.8 );
+}
+	.avgrund-active .avgrund-popup-animate {
+		visibility: visible;
+		opacity: 1;
+
+		-webkit-transform: scale( 1.1 );
+		   -moz-transform: scale( 1.1 );
+		    -ms-transform: scale( 1.1 );
+		     -o-transform: scale( 1.1 );
+		        transform: scale( 1.1 );
+	}
+	.avgrund-popup.stack {
+		-webkit-transform: scale( 1.5 );
+		   -moz-transform: scale( 1.5 );
+		    -ms-transform: scale( 1.5 );
+		     -o-transform: scale( 1.5 );
+		        transform: scale( 1.5 );
+	}
+	.avgrund-active .avgrund-popup.stack {
+		-webkit-transform: scale( 1.1 );
+		   -moz-transform: scale( 1.1 );
+		    -ms-transform: scale( 1.1 );
+		     -o-transform: scale( 1.1 );
+		        transform: scale( 1.1 );
+	}
+
+
+.avgrund-ready body,
+.avgrund-ready .avgrund-contents,
+.avgrund-ready .avgrund-popup,
+.avgrund-ready .avgrund-cover {
+	-webkit-transform-origin: 50% 50%;
+	   -moz-transform-origin: 50% 50%;
+	    -ms-transform-origin: 50% 50%;
+	     -o-transform-origin: 50% 50%;
+	        transform-origin: 50% 50%;
+
+	-webkit-transition: 0.3s all cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	   -moz-transition: 0.3s all cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	    -ms-transition: 0.3s all cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	     -o-transition: 0.3s all cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	        transition: 0.3s all cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+.avgrund-ready .avgrund-popup.no-transition {
+	-webkit-transition: none;
+	   -moz-transition: none;
+	    -ms-transition: none;
+	     -o-transition: none;
+	        transition: none;
+}

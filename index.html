@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0">
+
+        <title>
+            Caramell Shot Timer
+        </title>
+        <link rel='icon' type='image/png' href='design/heart.png'>
+        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=ABeeZee|Finger+Paint'>
+        <link rel='stylesheet' href='design/style.css'>
+        <!--[if lt IE 9]>  
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
+        <![endif]-->  
+        <style>
+                                #,
+                                ###
+                               ## ##
+                              ##  ##
+                               ####
+                                 :
+                                #####
+                               ######
+                               ##  ##
+                               ##  ##
+                               ##  ##
+                               ##  ##########
+                               ##  #############
+                          #######  ###############
+                      #############################
+                .###################################
+               #####################################;
+               ##                                 ##.
+               ##                                 ##
+               #####################################
+               ##                                 ##
+               ##     THE CAKE IS NOT A LIE!      ##
+               ##                                 ###
+            #####                                 #####
+           ### ##################################### ###
+          ###  ##                                 ##  ###
+          ##   ## ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, ##   ##
+           ##  #####################################  ##
+            ##                                       ##
+             ####                                 ####
+               ######                          ######
+                  ###############################
+      </style>
+    </head>
+    <body>
+        <div id="wrapper" class="avgrund-contents">
+            <div id="caramelldansen-image-wrapper">
+                <img src="/images/caramelldansen.gif" alt="Shot!">
+            </div>
+            <div id="caramelldansen-content-wrapper">
+                <h1>
+                    Caramell Shot
+                </h1>
+                <button id="dafuq-button" class="info-button">
+                    Dafuq!?
+                </button>
+                <button id="settings-button">
+                    Settings
+                </button>
+                <div id="settings">
+                    <label>
+                        Interval
+                        <input type="number" id="inInterval" value="5" min="1">
+                    </label>
+                    <label>
+                        How much random
+                        <input type="number" id="inProbability" value="0.20" step="0.01" max="1">
+                    </label>
+                </div>
+                <button id="go-button">
+                    Go for a shot about every <span id="approximate-time"><!-- --></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- <div id="youtubePlayer"></div> -->
+        <div id="player"><!-- --></div>
+        <div class="avgrund-cover"><!-- --></div>
+        <div id="info-wrapper" class="avgrund-popup">
+            <ol>
+                <li>
+                    Start the timer
+                </li>
+                <li>
+                    Wait for the song to start
+                </li>
+                <li>
+                    Take a shot
+                </li>
+                <li>
+                    Go to step 2
+                </li>
+                <li>
+                    ???
+                </li>
+                <li>
+                    Profit
+                </li>
+            </ol>
+            <button id="info-close-button" class="info-button">
+                Oh, ok
+            </button>
+
+        </div>
+
+        <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>
+        <script src='scripts/plugins.js'></script>
+        <script src='scripts/caramellshot.js'></script>
+
+        <script>
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-3953312-12']);
+            _gaq.push(['_setDomainName', 'caramellshot.com']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); 
+                ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+    </body>
+</html>
